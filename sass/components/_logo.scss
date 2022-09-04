@@ -1,0 +1,24 @@
+.logo,
+.logo-down {
+  color: var(--primary-text-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 90px;
+  font-style: normal;
+}
+
+.logo__web,
+.footer__logo__web-down {
+  color: var(--accents);
+  font-style: normal;
+}
+
+.logo-footer {
+  color: var(--hero-and-footer-color);
+}
+
+.logo-down {
+  margin-bottom: 20px;
+}

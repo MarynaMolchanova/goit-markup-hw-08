@@ -1,0 +1,245 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 448px;
+}
+
+.modal__form-field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal__form-field label {
+  margin-bottom: 4px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--contacts-color);
+}
+
+.modal__form-field input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form-field input:focus,
+.modal__form-field input:hover {
+  border: 1px solid var(--accents);
+}
+
+.modal__icon {
+  position: absolute;
+
+  top: 29px;
+  left: 10px;
+}
+
+.modal__form-field input:focus ~ .modal__icon,
+.modal__form-field input:hover ~ .modal__icon {
+  fill: var(--accents);
+}
+
+.modal__form-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  height: 120px;
+
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form-field textarea::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__form-field textarea:hover,
+.modal__form-field textarea:focus {
+  border: 1px solid var(--accents);
+}
+
+.field {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.field__accept-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contacts-color);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding-left: 14px;
+}
+
+.field__umovu {
+  color: var(--accents);
+  text-decoration-line: underline;
+
+  padding-left: 5px;
+}
+
+.button-modal {
+  color: var(--hero-and-footer-color);
+  background-color: var(--accents);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 52px;
+  text-align: center;
+  margin: 0;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover {
+  background-color: #188ceb;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.close-button__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button__close svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button__close:hover,
+.close-button__close:focus {
+  border: 1px solid var(--accents);
+}
+
+.close-button__close:hover svg,
+.close-button__close:focus svg {
+  fill: var(--accents);
+}
+
+.field__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.field__icon-check {
+  display: inline-block;
+
+  margin-right: 7px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 4px;
+}
+
+.field__checkbox:checked + .field__icon-check {
+  border: 2px solid var(--accents);
+  background-color: var(--accents);
+  background-image: url("../images/icons.svg");
+}

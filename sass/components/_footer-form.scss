@@ -1,0 +1,126 @@
+.footer-form {
+  text-align: center;
+
+  @media screen and (min-width: 1199px) {
+    width: 570px;
+    height: 86px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    outline: none;
+  }
+
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    margin-top: 15px;
+  }
+}
+
+.subscribe {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.footer-form__content {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 12px;
+  }
+}
+
+.subscribe__sub {
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    outline: none;
+  }
+}
+
+.footer-form__field input {
+  width: 358px;
+  background: #2f303a;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    line-height: 1.25;
+  }
+}
+
+.footer-form__field::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__button {
+  color: var(--hero-and-footer-color);
+  background-color: var(--accents);
+  cursor: pointer;
+
+  margin: 20px auto 0 auto;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 28px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
+.footer-form__button:hover {
+  background-color: #188ceb;
+}
+
+.footer-form__send {
+  margin-left: 10px;
+  padding: 0;
+}
