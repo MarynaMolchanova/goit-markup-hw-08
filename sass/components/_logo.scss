@@ -22,3 +22,9 @@
 .logo-down {
   margin-bottom: 20px;
 }
+
+.logo-down {
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
+}

@@ -11,6 +11,9 @@
   }
 }
 .foot .blocks + .blocks {
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
   margin-left: 90px;
 }
 

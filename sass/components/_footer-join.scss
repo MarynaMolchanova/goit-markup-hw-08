@@ -26,6 +26,9 @@
 
 .join__webs {
   display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 .join__webs .join__soc + .join__soc {
   margin-left: 10px;
