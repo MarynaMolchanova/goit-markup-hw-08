@@ -533,6 +533,11 @@ a {
   margin-right: auto;
   width: 448px;
 }
+@media screen and (max-width: 767px) {
+  .modal__form {
+    width: 370px;
+  }
+}
 
 .modal__form-field {
   margin-bottom: 10px;
@@ -667,6 +672,12 @@ a {
   text-align: center;
   padding-left: 14px;
 }
+@media screen and (max-width: 767px) {
+  .field__accept-label {
+    font-size: 12px;
+    padding-left: 0;
+  }
+}
 
 .field__umovu {
   color: var(--accents);
@@ -720,6 +731,11 @@ a {
   padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .modal__title {
